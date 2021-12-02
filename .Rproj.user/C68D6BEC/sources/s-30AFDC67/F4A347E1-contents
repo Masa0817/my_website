@@ -1,0 +1,27 @@
+---
+title: "plots"
+output: html_document
+---
+
+### This is my plots page
+
+
+```{r messages=F}
+library(tidyverse)
+```
+
+
+
+
+
+
+```{r}
+x <- 1:10
+y<- x**2
+
+df <- tibble(x=x,
+             y=y)
+
+ggplot(df, aes(x=x, y=y))+geom_point()
+
+```
